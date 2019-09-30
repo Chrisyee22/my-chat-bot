@@ -18,6 +18,7 @@ class MyBot extends ActivityHandler {
 
             // By calling next() you ensure that the next BotHandler is run.
             await next();
+            context.sendActivity("Anyone else here?");
         });
 
         this.onMembersAdded(async (context, next) => {
